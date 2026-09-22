@@ -5,21 +5,21 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="noindex, nofollow">
 <title>Ryan Brooks</title>
-<meta name="description" content="Ryan Brooks — independent developer. Currently building Hailsi.">
-<meta property="og:title" content="Ryan Brooks — Independent developer building Hailsi">
-<meta property="og:description" content="Independent developer. Currently building Hailsi — real-time voice translation in your own voice.">
+<meta name="description" content="Ryan Brooks — independent developer. Maker of Hailsi, offline real-time voice translation for Windows.">
+<meta property="og:title" content="Ryan Brooks — Independent developer, maker of Hailsi">
+<meta property="og:description" content="Independent developer. Made Hailsi — offline real-time voice translation for Windows. Nothing you say leaves your PC.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://rjbrooks.dev">
-<meta property="og:image" content="https://rjbrooks.dev/og-image.png?v=1">
+<meta property="og:image" content="https://rjbrooks.dev/og-image.png?v=2">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="Ryan Brooks — Independent developer. Building Hailsi.">
+<meta property="og:image:alt" content="Ryan Brooks — Independent developer. Maker of Hailsi.">
 <meta property="og:site_name" content="Ryan Brooks">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Ryan Brooks — Independent developer building Hailsi">
-<meta name="twitter:description" content="Independent developer. Currently building Hailsi — real-time voice translation in your own voice.">
-<meta name="twitter:image" content="https://rjbrooks.dev/og-image.png?v=1">
-<meta name="twitter:image:alt" content="Ryan Brooks — Independent developer. Building Hailsi.">
+<meta name="twitter:title" content="Ryan Brooks — Independent developer, maker of Hailsi">
+<meta name="twitter:description" content="Independent developer. Made Hailsi — offline real-time voice translation for Windows. Nothing you say leaves your PC.">
+<meta name="twitter:image" content="https://rjbrooks.dev/og-image.png?v=2">
+<meta name="twitter:image:alt" content="Ryan Brooks — Independent developer. Maker of Hailsi.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
@@ -274,13 +274,13 @@ footer p { margin-bottom: 4px; }
   <header>
     <div class="shell-line"><span class="prompt">~ $</span> whoami</div>
     <h1 class="name">Ryan Brooks<span class="cursor"></span></h1>
-    <p class="tagline">Independent developer. Building <span class="accent">Hailsi</span>.</p>
+    <p class="tagline">Independent developer. Made <span class="accent">Hailsi</span> — and shipped it.</p>
   </header>
 
   <section>
     <h2>about</h2>
     <p>I build tools that fix problems I run into — usually at the intersection of language, performance, and software that's supposed to "just work" but doesn't.</p>
-    <p>Mostly self-taught. Comfortable in Python and PowerShell, learning more as needed. Day-job background in QuickBooks consulting; building toward independent income through software products.</p>
+    <p>Mostly self-taught. Started in Python and PowerShell; picked up Rust and TypeScript by shipping a real desktop app. Day-job background in QuickBooks consulting; building toward independent income through software products, one release at a time.</p>
   </section>
 
   <section>
@@ -288,18 +288,20 @@ footer p { margin-bottom: 4px; }
     <div class="project">
       <div class="project-header">
         <div class="project-name"><a href="https://hailsi.com" target="_blank" rel="noopener">Hailsi</a></div>
-        <span class="project-status">in development · v1 ~3 mo out</span>
+        <span class="project-status">launched · v1.0.3 · Sept 2026</span>
       </div>
-      <p class="project-tagline">Real-time voice translation overlay. Speak your language; they hear theirs.</p>
-      <p class="project-description">A desktop app that captures audio (mic or system loopback), translates in real time, and overlays the result on whatever app you're in. Started as a personal Finnish ↔ English tool, growing into a multi-language productized version with a free tier and paid options later. Privacy-first by default — no audio leaves the machine unless you want it to, regardless of which plan you're on.</p>
+      <p class="project-tagline">Offline real-time voice translation for Windows. Speak your language; they hear theirs. Nothing you say leaves your PC.</p>
+      <p class="project-description">Released 21 September 2026. Speech → translation → spoken voice, all on the user's own machine: works with Wi-Fi off once the language packs are downloaded, no account, no subscription. Started as a personal Finnish ↔ English tool and grew into a product with four modes (Conversation, Compact, Floating, and the Workspace cockpit), text in 400+ languages with spoken output in 15 and microphone input in 58, translation of what you <em>hear</em> from Discord, Zoom or any app, and Hailsi Link for two copies across the internet. The free tier is the full translator; Pro is a one-time $39. Signed installer, in-app updates, and a <a href="https://hailsi.com/changelog" target="_blank" rel="noopener">public changelog</a>.</p>
       <div class="project-stack">
         <span class="tag">Tauri 2</span>
         <span class="tag">Rust</span>
         <span class="tag">React/TS</span>
         <span class="tag">Python</span>
         <span class="tag">faster-whisper</span>
-        <span class="tag">Helsinki-NLP</span>
+        <span class="tag">OPUS-MT</span>
+        <span class="tag">MADLAD-400</span>
         <span class="tag">WASAPI</span>
+        <span class="tag">Cloudflare Workers</span>
       </div>
     </div>
   </section>
@@ -321,14 +323,26 @@ footer p { margin-bottom: 4px; }
       </div>
       <div class="links-row">
         <span class="links-key">hailsi</span>
-        <span class="links-value"><a href="https://hailsi.com" target="_blank" rel="noopener">hailsi.com</a></span>
+        <span class="links-value"><a href="https://hailsi.com" target="_blank" rel="noopener">hailsi.com</a> · <a href="https://hailsi.com/changelog" target="_blank" rel="noopener">changelog</a></span>
+      </div>
+      <div class="links-row">
+        <span class="links-key">discord</span>
+        <span class="links-value"><a href="https://discord.gg/CMUMtbW6Jb" target="_blank" rel="noopener">Hailsi server</a></span>
+      </div>
+      <div class="links-row">
+        <span class="links-key">reddit</span>
+        <span class="links-value"><a href="https://www.reddit.com/r/Hailsi/" target="_blank" rel="noopener">r/Hailsi</a></span>
+      </div>
+      <div class="links-row">
+        <span class="links-key">bluesky</span>
+        <span class="links-value"><a href="https://bsky.app/profile/hailsiapp.bsky.social" target="_blank" rel="noopener">@hailsiapp</a></span>
       </div>
     </div>
   </section>
 
   <footer>
-    <p class="meta">// last updated 2026-05-20</p>
-    <p>© Ryan Brooks. Built in a single late night.</p>
+    <p class="meta">// last updated 2026-09-22</p>
+    <p>© Ryan Brooks. Built in a single late night; updated the day after launch.</p>
   </footer>
 
 </div>
